@@ -30,6 +30,7 @@ Nom
 Joueur
 ```
 [POST] /player
+[GET]  /player/:email
 [PUT]  /player/:email
 ```
 

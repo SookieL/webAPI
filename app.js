@@ -7,6 +7,7 @@ import express from 'express';
 import 'express-async-errors';
 
 import morgan from 'morgan';
+import mainRouter from './routes/index.js';
 
 //! Variable d'env
 const { NODE_ENV, PORT } = process.env;
@@ -19,9 +20,10 @@ const app = express();
 app.use(morgan(NODE_ENV === 'dev' ? 'dev' : 'tiny'));
 app.use(express.json());
 
-// TODO Routing
+//* Routing
+app.use('/api', mainRouter);
 
 //* Launch Web API
 app.listen(PORT, () => {
     console.log(`Web API is running on ${PORT} (${NODE_ENV})`);
-})
+});
