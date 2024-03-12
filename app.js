@@ -6,6 +6,9 @@ import 'dotenv/config';
 import express from 'express';
 import 'express-async-errors';
 
+import expressJSDocSwagger from 'express-jsdoc-swagger';
+import swaggerOption from './swagger.option.js';
+
 import morgan from 'morgan';
 import mainRouter from './routes/index.js';
 
@@ -15,6 +18,9 @@ const { NODE_ENV, PORT } = process.env;
 //! Create Web API
 // * Initialization
 const app = express();
+
+//* Add swagger
+expressJSDocSwagger(app)(swaggerOption);
 
 //* Middlewares
 app.use(morgan(NODE_ENV === 'dev' ? 'dev' : 'tiny'));
