@@ -49,6 +49,8 @@ Equipe
 Prod
 - express
 - express-async-errors
+- express-jsdoc-swagger
+- yup
 - dotenv
 - morgan
 Dev
