@@ -11,30 +11,38 @@ Gestion d'équipe pour des activités sportives
 
 ### Structure de données
 Equipe:
-- Id
-- Nom
-- Sport
-- Périodicité
-- Joueurs
+```
+Id
+Nom
+Sport
+Périodicité
+Joueurs
+```
 
 Joueur:
-- Email
-- Prenom
-- Nom
+```
+Email
+Prenom
+Nom
+```
 
 ### Endpoints
 Joueur
-- [POST] /player
-- [PUT]  /player/:email
+```
+[POST] /player
+[PUT]  /player/:email
+```
 
 Equipe
-- [GET]    /team
-- [POST]   /team
-- [GET]    /team/:id
-- [PUT]    /team/:id
-- [DELETE] /team/:id
-- [PATCH]  /team/:id/addPlayer
-- [PATCH]  /team/:id/removePlayer
+```
+[GET]    /team
+[POST]   /team
+[GET]    /team/:id
+[PUT]    /team/:id
+[DELETE] /team/:id
+[PATCH]  /team/:id/addPlayer
+[PATCH]  /team/:id/removePlayer
+```
 
 ## Dépendences
 Prod
