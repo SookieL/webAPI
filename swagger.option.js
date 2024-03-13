@@ -32,8 +32,8 @@ const swaggerOption = {
     swaggerUIPath: '/api-docs',
     swaggerUiOptions: {},
     // JSON Api Docs
-    exposeApiDocs: false,
-    apiDocsPath: '/v3/api-docs',
+    exposeApiDocs: true,
+    apiDocsPath: '/v3/api-docs/swagger.json',
   };
 
 export default swaggerOption;
