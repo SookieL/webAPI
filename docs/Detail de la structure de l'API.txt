@@ -1,0 +1,24 @@
+Detail de la structure de l'API
+*******************************
+
+• Objectif : 
+Séparation par responsabilité
+Permet d'éviter de tout coder dans le controller
+
+• Role des différentes couches : 
+
+  - Validators
+    Permet de définir les regles de validation (yup) pour les données reçu par l'API
+
+  - DTO
+    Modele de sortie des données (encapsulation)
+    Formattage des données avant de l'envoyé par l'API
+
+  - Services
+    Les méthodes business
+
+  - Controllers
+    Gestion de la requete
+
+  - Routes
+    Aiguillage pour atteindre le controller adapté
