@@ -9,6 +9,7 @@ const playerController = {
      * @tags Player
      * @param {string} email.path - Email du joueur
      * @return {PlayerDTO} 200 - Player - application/json
+     * @return 404 - Not found
      */
     get: async (req, res) => {
         const email = req.params.email;
